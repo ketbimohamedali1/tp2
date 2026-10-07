@@ -19,6 +19,34 @@
             <p><label for="naiss">Date de naissance</label><input type="date" name="naiss" id="naiss"></p>
         </form>
     </main>
+    <section>
+        <fieldset><legend>Niveau en informatique</legend>
+        <input type="radio" name="niv" id="n1" value="n1" checked>Debutant<br>
+        <input type="radio" name="niv" id="n2" value="n2" >Intermidiare<br>
+        <input type="radio" name="niv" id="n3" value="n3" checked>Avancé<br>
+        </fieldset>
+    </section>
+    <aside>
+        <fieldset><legend>Ateliers souhaités</legend>
+        <input type="checkbox" name="at" id="at1"value="python">Atelier Python
+        <input type="checkbox" name="at" id="at2"value="jeux video">Atelier jeux vidéo
+
+    </fieldset>
+    </aside>
+    <nav>
+        <label for="">année d'etudes</label>
+        <select name="annee" id="">
+            <option value="">choisir</option>
+            <option value="1">1 ere</option>
+            <option value="2">2 eme</option>
+            <option value="3">3 eme</option>
+        </select>
+        <label for="">motivation</label>
+        <textarea name="motivation" id="" rows="40" cols="5"></textarea><br>
+        <input type="checkbox" name="reg" id=""><label for="reg">J'accepte le reglement du club</label><br>
+        <input type="submit" name="sub" id="sub" value="envoyer">
+        <input type="reset" name="res" id="res" value="renitialisation"><br>
+    </nav>
     <footer>
         <p>Club Informatique</p><br>
         <a href="index.html">Retour a l'acceuil</a>
