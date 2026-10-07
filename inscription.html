@@ -11,19 +11,19 @@
     </header>
     <main>
         <form action="merci.html" method="get"><h3>Vos informations</h3>
-            <p><label for="n">Nom</label><input type="text" id="n" name="n"></p>
-            <p><label for="p">Prénom</label><input type="text" name="p" id="p"></p>
-            <p><label for="ad">Adresse e-mail</label><input type="email" name="ad" id="ad"></p>
-            <p><label for="t">télèphone</label><input type="tel" name="t" id="t"></p>
-            <p><label for="mdp">Mot de passe</label><input type="password" name="mdp" id="mdp"></p>
-            <p><label for="naiss">Date de naissance</label><input type="date" name="naiss" id="naiss"></p>
+            <p><label for="n">Nom</label><input type="text" id="n" name="n" required et minlength="2" ></p>
+            <p><label for="p">Prénom</label><input type="text" name="p" id="p" required et minlength="2"></p>
+            <p><label for="ad">Adresse e-mail</label><input type="email" name="ad" id="ad" required></p>
+            <p><label for="t">télèphone</label><input type="tel" name="t" id="t" required></p>
+            <p><label for="mdp">Mot de passe</label><input type="password" name="mdp" id="mdp"required et minlength="8" ></p>
+            <p><label for="naiss">Date de naissance</label><input type="date" name="naiss" id="naiss"required min="1990-01-01" max="2010-12-31" ></p>
         </form>
     </main>
     <section>
         <fieldset><legend>Niveau en informatique</legend>
-        <input type="radio" name="niv" id="n1" value="n1" checked>Debutant<br>
-        <input type="radio" name="niv" id="n2" value="n2" >Intermidiare<br>
-        <input type="radio" name="niv" id="n3" value="n3" checked>Avancé<br>
+        <input type="radio" name="niv" id="n1" value="n1"required checked>Debutant<br>
+        <input type="radio" name="niv" id="n2" value="n2" required>Intermidiare<br>
+        <input type="radio" name="niv" id="n3" value="n3" checked required>Avancé<br>
         </fieldset>
     </section>
     <aside>
@@ -37,13 +37,13 @@
         <label for="">année d'etudes</label>
         <select name="annee" id="">
             <option value="">choisir</option>
-            <option value="1">1 ere</option>
+            <option value="1"required>1 ere</option>
             <option value="2">2 eme</option>
             <option value="3">3 eme</option>
         </select>
         <label for="">motivation</label>
         <textarea name="motivation" id="" rows="40" cols="5"></textarea><br>
-        <input type="checkbox" name="reg" id=""><label for="reg">J'accepte le reglement du club</label><br>
+        <input type="checkbox" name="reg" id=""required><label for="reg">J'accepte le reglement du club</label><br>
         <input type="submit" name="sub" id="sub" value="envoyer">
         <input type="reset" name="res" id="res" value="renitialisation"><br>
     </nav>
